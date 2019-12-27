@@ -1,0 +1,11 @@
+# Actual requirements
+gpiozero==1.5.1
+
+# Debug
+autopep8==1.4.4
+colorzero==1.1
+pycodestyle==2.5.0
+
+# Core
+pip==19.2.3
+setuptools==41.2.0
