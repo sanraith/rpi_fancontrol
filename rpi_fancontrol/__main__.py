@@ -4,8 +4,8 @@ from time import sleep
 
 temp_max = 70
 temp_min = 40
-test_mode = True
-fan_pin = 17
+test_mode = False
+fan_pin = 26
 
 
 def main():
@@ -14,9 +14,9 @@ def main():
     while True:
         temp = reader.read_cpu_temperature()
         print(temp)
-        if (temp > temp_max and not fan.powered):
+        if (temp > temp_max and (fan.powered is None or not fan.powered)):
             fan.power(True)
-        elif (temp < temp_min and fan.powered):
+        elif (temp < temp_min and (fan.powered is None or fan.powered)):
             fan.power(False)
         sleep(1)
 
