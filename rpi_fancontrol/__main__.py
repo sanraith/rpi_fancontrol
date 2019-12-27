@@ -1,5 +1,5 @@
-from tempreader import TempReader
-from fancontrol import Fan
+from .tempreader import TempReader
+from .fancontrol import Fan
 from time import sleep
 
 temp_max = 70
@@ -8,7 +8,7 @@ test_mode = True
 fan_pin = 17
 
 
-def __main__():
+def main():
     reader = TempReader(test_mode)
     fan = Fan(fan_pin, test_mode)
     while True:
@@ -21,4 +21,5 @@ def __main__():
         sleep(1)
 
 
-__main__()
+if (__name__ == "__main__"):
+    main()
