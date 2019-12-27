@@ -15,7 +15,7 @@ class Fan():
     def power(self, on):
         self._powered = on
         if (not self.test_mode):
-            self._fan.value(on)
+            self._fan.value = 1 if on else 0
         if (on):
             print("Turning fan on")
         else:

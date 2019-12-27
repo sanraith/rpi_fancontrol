@@ -23,4 +23,4 @@ class TempReader:
             process = subprocess.Popen(
                 "/opt/vc/bin/vcgencmd measure_temp", stdout=subprocess.PIPE, shell=True)
             (output, err) = process.communicate()
-            return output
+            return str(output, 'utf-8')
