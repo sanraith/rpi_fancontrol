@@ -1,4 +1,4 @@
-from gpiozero import CPUTemperature, LED
+from gpiozero import LED
 
 
 class Fan():
