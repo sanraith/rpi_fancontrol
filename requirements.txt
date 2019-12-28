@@ -1,11 +1,2 @@
-# Actual requirements
-RPi.GPIO==0.7.0
+# Common requirements
 gpiozero==1.5.1
-
-# Debug
-autopep8==1.4.4
-colorzero==1.1
-pycodestyle==2.5.0
-
-# Core
-setuptools==41.2.0

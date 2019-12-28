@@ -2,9 +2,9 @@ from .tempreader import TempReader
 from .fancontrol import Fan
 from time import sleep
 
-temp_max = 70
-temp_min = 40
 test_mode = False
+temp_min = 40
+temp_max = 70
 fan_pin = 26
 
 
