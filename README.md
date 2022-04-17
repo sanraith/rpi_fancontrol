@@ -22,3 +22,12 @@ Edit parameters in `__main__.py`.
     source venv/bin/activate
     python3 -m rpi_fancontrol
     deactivate
+
+## Notes for running on x64 Ubuntu instead of Raspbian
+
+- To use python, might need to `sudo apt install python3-dev`
+- To use venv, might need to `sudo apt install python3.9-venv`
+- To use vcgencmd, might need to `sudo apt install libraspberrypi-bin`
+- To install raspberry specific requirements, use this command instead:  
+`env CFLAGS="-fcommon" pip install -r requirements-rpi.txt`
+- The temp reader command is located in `/usr/bin/vcgencmd` instead of `/opt/vc/bin/vcgencmd`. Update `tempreader.py` if needed.
