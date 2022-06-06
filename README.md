@@ -31,3 +31,4 @@ Edit parameters in `__main__.py`.
 - To install raspberry specific requirements, use this command instead:  
 `env CFLAGS="-fcommon" pip install -r requirements-rpi.txt`
 - The temp reader command is located in `/usr/bin/vcgencmd` instead of `/opt/vc/bin/vcgencmd`. Update `tempreader.py` if needed.
+- To run at system boot, use ```crontab -e``` to edit your cron and add line ```@reboot /path/to/script```.
